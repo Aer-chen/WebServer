@@ -19,7 +19,7 @@ public class PropertyUtil {
         loadProps();
     }
 
-    private synchronized static void loadProps() {
+    public   static void loadProps() {
         log.info("开始加载properties文件内容.......");
         props = new Properties();
         InputStream in = null;

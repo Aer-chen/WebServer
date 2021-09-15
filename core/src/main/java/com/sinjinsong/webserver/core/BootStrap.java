@@ -16,6 +16,7 @@ public class BootStrap {
      * 用户程序与服务器的接口
      */
     public static void run() {
+        PropertyUtil.loadProps();
         String port = PropertyUtil.getProperty("server.port");
         if(port == null) {
             throw new IllegalArgumentException("server.port 不存在");
